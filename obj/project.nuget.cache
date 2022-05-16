@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ygr2C74E5r/83Ba9PgqUb2/k3Bbcz+gtBlH7ZplZKqFTOKfdLgqyd2emu2v9x1xD4ARVaCIUdOEMyCiNzLP0HA==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\MyChatApp\\MyChatApp\\MyChatApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tbong\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.22\\microsoft.netcore.app.host.win-x64.3.1.22.nupkg.sha512"
+  ],
+  "logs": []
+}
