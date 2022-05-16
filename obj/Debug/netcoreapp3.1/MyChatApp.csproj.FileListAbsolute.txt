@@ -14,3 +14,4 @@ D:\GitHub\MyChatApp\MyChatApp\obj\Debug\netcoreapp3.1\MyChatApp.csproj.CoreCompi
 D:\GitHub\MyChatApp\MyChatApp\obj\Debug\netcoreapp3.1\MyChatApp.dll
 D:\GitHub\MyChatApp\MyChatApp\obj\Debug\netcoreapp3.1\MyChatApp.pdb
 D:\GitHub\MyChatApp\MyChatApp\obj\Debug\netcoreapp3.1\MyChatApp.genruntimeconfig.cache
+D:\GitHub\MyChatApp\MyChatApp\obj\Debug\netcoreapp3.1\MyChatApp.Properties.Resources.resources

@@ -29,6 +29,7 @@ namespace MyChatApp
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textLocalPort = new System.Windows.Forms.TextBox();
             this.textLocalIp = new System.Windows.Forms.TextBox();
@@ -43,8 +44,10 @@ namespace MyChatApp
             this.textMessage = new System.Windows.Forms.TextBox();
             this.listMessage = new System.Windows.Forms.ListBox();
             this.buttonSend = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -55,14 +58,14 @@ namespace MyChatApp
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(257, 158);
+            this.groupBox1.Size = new System.Drawing.Size(257, 120);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Me";
             // 
             // textLocalPort
             // 
-            this.textLocalPort.Location = new System.Drawing.Point(76, 84);
+            this.textLocalPort.Location = new System.Drawing.Point(76, 70);
             this.textLocalPort.Name = "textLocalPort";
             this.textLocalPort.Size = new System.Drawing.Size(156, 23);
             this.textLocalPort.TabIndex = 3;
@@ -77,7 +80,7 @@ namespace MyChatApp
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 92);
+            this.label2.Location = new System.Drawing.Point(21, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 15);
             this.label2.TabIndex = 1;
@@ -101,14 +104,14 @@ namespace MyChatApp
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Location = new System.Drawing.Point(303, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(280, 158);
+            this.groupBox2.Size = new System.Drawing.Size(280, 120);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Friend";
             // 
             // textRemotePort
             // 
-            this.textRemotePort.Location = new System.Drawing.Point(98, 84);
+            this.textRemotePort.Location = new System.Drawing.Point(98, 70);
             this.textRemotePort.Name = "textRemotePort";
             this.textRemotePort.Size = new System.Drawing.Size(156, 23);
             this.textRemotePort.TabIndex = 5;
@@ -116,7 +119,7 @@ namespace MyChatApp
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 92);
+            this.label3.Location = new System.Drawing.Point(21, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 15);
             this.label3.TabIndex = 3;
@@ -140,9 +143,9 @@ namespace MyChatApp
             // 
             // buttonConnect
             // 
-            this.buttonConnect.Location = new System.Drawing.Point(642, 65);
+            this.buttonConnect.Location = new System.Drawing.Point(623, 101);
             this.buttonConnect.Name = "buttonConnect";
-            this.buttonConnect.Size = new System.Drawing.Size(128, 54);
+            this.buttonConnect.Size = new System.Drawing.Size(147, 31);
             this.buttonConnect.TabIndex = 2;
             this.buttonConnect.Text = "Connect!";
             this.buttonConnect.UseVisualStyleBackColor = true;
@@ -150,37 +153,49 @@ namespace MyChatApp
             // 
             // textMessage
             // 
-            this.textMessage.Location = new System.Drawing.Point(33, 628);
+            this.textMessage.Location = new System.Drawing.Point(12, 351);
+            this.textMessage.Multiline = true;
             this.textMessage.Name = "textMessage";
-            this.textMessage.Size = new System.Drawing.Size(638, 23);
+            this.textMessage.Size = new System.Drawing.Size(657, 23);
             this.textMessage.TabIndex = 3;
             // 
             // listMessage
             // 
             this.listMessage.FormattingEnabled = true;
             this.listMessage.ItemHeight = 15;
-            this.listMessage.Location = new System.Drawing.Point(33, 191);
+            this.listMessage.Location = new System.Drawing.Point(12, 151);
             this.listMessage.Name = "listMessage";
-            this.listMessage.Size = new System.Drawing.Size(737, 409);
+            this.listMessage.Size = new System.Drawing.Size(758, 184);
             this.listMessage.TabIndex = 4;
             this.listMessage.SelectedIndexChanged += new System.EventHandler(this.buttonSend_Click);
             // 
             // buttonSend
             // 
-            this.buttonSend.Location = new System.Drawing.Point(690, 628);
+            this.buttonSend.Location = new System.Drawing.Point(690, 351);
             this.buttonSend.Name = "buttonSend";
             this.buttonSend.Size = new System.Drawing.Size(80, 23);
             this.buttonSend.TabIndex = 5;
             this.buttonSend.Text = "Send!";
             this.buttonSend.UseVisualStyleBackColor = true;
             this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
-
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(646, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(101, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 681);
+            this.ClientSize = new System.Drawing.Size(804, 409);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonSend);
             this.Controls.Add(this.listMessage);
             this.Controls.Add(this.textMessage);
@@ -194,6 +209,7 @@ namespace MyChatApp
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -215,6 +231,7 @@ namespace MyChatApp
         private System.Windows.Forms.TextBox textMessage;
         private System.Windows.Forms.ListBox listMessage;
         private System.Windows.Forms.Button buttonSend;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
